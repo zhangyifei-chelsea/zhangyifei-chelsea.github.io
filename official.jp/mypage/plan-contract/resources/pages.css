@@ -1,0 +1,275 @@
+/*---------------------------------------------
+  PROFILE/BIOGRAPHY
+---------------------------------------------*/
+
+
+/**** biography ****/
+
+#profile .biography {
+	margin-bottom:128px;
+}
+
+#profile .biography dl {
+	overflow:hidden;
+	clear:both;
+}
+
+
+@media screen and (max-width: 767px) {
+
+#profile .biography dt {
+	margin-bottom:32px;
+}
+
+}
+
+
+
+/**** profile ****/
+
+#profile .profile li {
+	margin-bottom:64px;
+}
+
+#profile .profile dl {
+	overflow:hidden;
+	clear:both;
+}
+
+@media screen and (max-width: 767px) {
+
+#profile .profile dt {
+	margin:0 auto 32px;
+	max-width:450px;
+}
+
+#profile .profile dd .name {
+	font-size:16px;
+	margin-bottom:32px;
+}
+
+#profile .profile dd .name .font-accent {
+	font-size:42px;
+	display:block;
+	line-height:1;
+	margin-bottom:8px;
+}
+
+}
+
+
+/*------------------
+  TYPE-A
+------------------*/
+
+#profile.profile-a .main {
+	margin-bottom:64px;
+}
+
+/**** biography ****/
+
+#profile.profile-a .biography dl {
+	position:relative;
+}
+
+@media screen and (min-width: 768px) {
+
+#profile.profile-a .biography dt {
+	position:absolute;
+	top:50%;
+	left:0;
+	transform:translateY(-50%);
+	width:48%;
+}
+
+#profile.profile-a .biography dd {
+	width:48%;
+	float:right;
+}
+
+}
+
+
+/**** profile ****/
+
+@media screen and (min-width: 768px) {
+	
+#profile.profile-a .profile dt {
+	width:35%;
+}
+
+#profile.profile-a .profile dd {
+	width:60%;
+}
+
+#profile.profile-a .profile li:nth-child(odd) dt, #profile.profile-a .profile li:nth-child(even) dd {
+	float:left;
+}
+
+#profile.profile-a .profile li:nth-child(even) dt, #profile.profile-a .profile li:nth-child(odd) dd {
+	float:right;
+}
+
+#profile.profile-a .profile dd .name {
+	font-size:20px;
+	margin-bottom:32px;
+}
+
+#profile.profile-a .profile dd .name .font-accent {
+	font-size:56px;
+	display:block;
+	line-height:1;
+	margin-bottom:16px;
+}
+
+#profile.profile-a .profile li:nth-child(odd) .name {
+	text-align:right;
+}
+
+#profile.profile-a .profile li:nth-child(even) .name {
+	text-align:left;
+}
+
+}
+
+
+/*------------------
+  TYPE-B
+------------------*/
+
+/**** biography ****/
+
+#profile.profile-b .biography dt {
+	width:50%;
+	margin: 32px auto;
+}
+
+
+@media screen and (max-width: 767px) {
+
+#profile.profile-b .biography dt {
+	width:80%;
+}
+
+}
+
+
+/**** profile ****/
+
+@media screen and (min-width: 768px) {
+	
+#profile.profile-b .profile dt {
+	width:35%;
+	float: left;
+}
+
+#profile.profile-b .profile dd {
+	width:60%;
+	float: right;
+}
+
+#profile.profile-b .profile dd .name {
+	font-size:20px;
+	margin-bottom:32px;
+}
+
+#profile.profile-b .profile dd .name .font-accent {
+	font-size:56px;
+	display:block;
+	line-height:1;
+	margin-bottom:16px;
+}
+
+}
+
+
+/*------------------
+  TYPE-C
+------------------*/
+
+/**** biography ****/
+
+#profile.profile-c .biography dt {
+	width:50%;
+	margin: 32px auto;
+}
+
+#profile.profile-c .profile dd .name .font-accent {
+	font-size:40px;
+	display:block;
+	line-height:1;
+}
+
+@media screen and (max-width: 767px) {
+
+#profile.profile-c .biography dt {
+	width:80%;
+}
+
+}
+
+/**** profile ****/
+
+
+@media screen and (max-width: 1080px){
+#profile.profile-c .profile dd .name .font-accent {
+	font-size:29px;
+	display:block;
+	line-height:1;
+}
+}
+
+@media screen and (min-width: 768px) {
+	
+#profile.profile-c .profile ul {
+	overflow: hidden;
+	clear: both;
+}
+	
+#profile.profile-c .profile li {
+	width: 47.5%;
+	float: left;
+}
+
+#profile.profile-c .profile li:nth-child(2n+1) {
+    margin-right: 5%;
+}
+	
+#profile.profile-c .profile dt {
+	width:45%;
+	float: left;
+}
+
+#profile.profile-c .profile dd {
+	width:50%;
+	float: right;
+}
+
+#profile.profile-c .profile dd .name {
+	font-size:20px;
+	margin-bottom:16px;
+}
+
+}
+
+
+.join-btn li a{
+border: 1px solid #fff;
+    display: block;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.join-btn li a:hover{
+background:#fff;
+color:#000;
+}
+@media screen and (max-width: 767px) {
+.join-btn li a{
+background:#fff;
+color:#000;
+font-size:1rem;
+}
+}

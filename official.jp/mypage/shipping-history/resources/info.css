@@ -1,0 +1,682 @@
+/*---------------------------------------------
+  service
+---------------------------------------------*/
+
+#service h3 {
+	width:55%;
+	margin:0 auto 64px;
+}
+
+
+@media screen and (max-width: 767px) {
+	
+#service h3 {
+	width:75%;
+}
+
+}
+
+
+/*------------------
+  単一プラン
+------------------*/
+
+/***** plan *****/
+
+#service.service_single .plan {
+	width:100%;
+	max-width:800px;
+	margin:0 auto 64px;
+	border-radius: 3px;
+	background:#424242;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+#service.service_single .plan .description {
+	padding:32px 16px 0;
+}
+
+#service.service_single .plan .price {
+	padding:16px;
+	text-align:center;
+}
+
+#service.service_single .plan .registration a {
+	padding:16px;
+	border-top:solid 1px #616161;
+	text-align:center;
+	display:block;
+}
+
+
+/***** service *****/
+
+#service.service_single .service .service_list {
+	padding-bottom:16px;
+}
+
+#service.service_single .service .service_list dl {
+	border-bottom:solid 1px #424242;
+	padding-bottom:16px;
+	margin-bottom:16px;
+}
+
+#service.service_single .service .service_list dt {
+	font-size:16px;
+	font-weight:normal;
+	margin-bottom:0.5em;
+}
+
+
+/*------------------
+  複数プラン
+------------------*/
+
+#service.service_multiple .lead {
+	font-size: 14px;
+	margin-bottom: 64px;
+}
+
+/***** plan *****/
+
+#service.service_multiple .plan {
+margin-bottom: 64px;
+}
+
+#service.service_multiple .plan ul {
+	clear:both;
+	text-align:center;
+	padding: 10px 0;
+}
+
+#service.service_multiple .plan li {
+	padding: 32px 0 0;
+	box-sizing: border-box;
+	background:#424242;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+	border-radius: 3px;
+}
+
+#service.service_multiple .plan li dl  {
+	margin:0 16px 32px;
+}
+
+#service.service_multiple .plan li dt  {
+	margin-bottom:16px;
+	font-weight: normal;
+}
+
+#service.service_multiple .plan li dt .plan_name {
+	font-size:20px;
+}
+
+#service.service_multiple .plan li dd {
+	text-align:left;
+}
+
+#service.service_multiple .plan li .registrations a {
+	padding:16px 0;
+	border-top:solid 1px #616161;
+	display:block;
+}
+
+
+@media screen and (min-width: 768px) {
+
+#service.service_multiple .plan ul {
+	clear:both;
+}
+
+#service.service_multiple .plan li {
+	display:inline-block;
+	margin: 0px 1.5%;
+}
+
+#service.service_multiple .plan.plan-2 li {
+	width:40%;
+}
+
+#service.service_multiple .plan.plan-3 li {
+	width:30%;
+	float: left;
+	display: block;
+}
+	
+}
+
+
+@media screen and (max-width: 767px) {
+
+#service.service_multiple .plan li {
+	margin-bottom:32px;
+}
+
+}
+
+
+/***** service *****/
+
+#service.service_multiple .service h5 {
+	font-size:16px;
+	text-align:center;
+	margin-bottom:32px;
+}
+
+#service.service_multiple .service table {
+	width:100%;
+}
+
+#service.service_multiple .service th {
+	text-align:center;
+	border-bottom:solid 1px #616161;
+	padding-bottom:16px;
+	font-weight:normal;
+}
+
+#service.service_multiple .service td {
+	border-bottom:solid 1px #616161;
+	padding:16px 0px;
+}
+
+#service.service_multiple .service tr td:nth-child(n+2) {
+	text-align:center;
+	border-left:solid 16px rgba(0,0,0,0);
+}
+
+#service.service_multiple .service tr td.no_service {
+	color:#616161;
+}
+
+#service.service_multiple .service tr td .sub_txt {
+	font-size:12px;
+	margin-top:8px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+#service.service_multiple .service tr td:first-child {
+	padding:16px;
+}
+
+	
+}
+
+
+@media screen and (max-width: 767px) {
+
+#service.service_multiple .service th {
+	padding-bottom:8px;
+	line-height:1.4;
+}
+
+#service.service_multiple .service tr td:nth-child(n+2) {
+	text-align:center;
+	border-left:solid 8px rgba(0,0,0,0);
+	width:20%;
+}
+
+}
+
+
+
+
+
+/*---------------------------------------------
+  payment
+---------------------------------------------*/
+
+#payment .lead {
+	font-size: 14px;
+	margin-bottom: 64px;
+}
+
+
+/***** tab_menu *****/
+
+#payment .tab_menu {
+	margin-bottom: 64px;
+	border-bottom: solid 1px #616161;
+	height: 36px;
+	overflow-y: hidden;
+}
+
+#payment .tab_scroll {
+	overflow-x: scroll;
+}
+
+#payment .tab_menu ul {
+	display: table;
+	padding-bottom: 24px;
+}
+
+#payment .tab_menu li {
+	display: table-cell;
+}
+
+#payment .tab_menu li label{
+	cursor: pointer;
+	margin-bottom: 0;
+	padding: 0 16px 8px;
+	position: relative;
+	white-space: nowrap;
+}
+
+#payment .tab_menu li input:checked+label {
+	color: #008ef8;
+	border-bottom: solid 2px #008ef8;
+}
+
+
+
+/***** sub_menu *****/
+
+#payment .sub_menu {
+	margin-bottom: 64px;
+}
+
+#payment .sub_menu li {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+#payment .sub_menu li label{
+	cursor: pointer;
+}
+#payment .sub_menu li input:checked+label {
+	color: #008ef8;
+}
+
+
+/***** payment *****/
+
+#payment .payment .payment_list h3 {
+	margin-bottom: 64px;
+	font-size: 20px;
+}
+
+#payment .payment .payment_list .payment_box {
+	margin-bottom: 64px;
+}
+
+#payment .payment .payment_list .payment_box h4 {
+	font-size: 16px;
+	margin-bottom: 32px;
+}
+
+#payment .payment .payment_list .payment_box dl {
+	overflow: hidden;
+	clear: both;
+	border-bottom: solid 1px #616161;
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+#payment .payment .payment_list .payment_box dt {
+	width: 16%;
+	float: left;
+	font-weight: normal;
+}
+
+#payment .payment .payment_list .payment_box dd {
+	width: 84%;
+	float: right;
+	margin-bottom: 0;
+}
+}
+
+
+@media screen and (max-width: 767px) {
+
+#payment .payment .payment_list .payment_box dt {
+	font-weight: normal;
+	margin-bottom: 8px;
+}
+
+#payment .payment .payment_list .payment_box dd {
+	margin-bottom: 0;
+}
+}
+
+
+
+
+
+
+
+/*---------------------------------------------
+  INFO
+---------------------------------------------*/
+
+#info dl {
+	margin-bottom:64px;
+}
+
+#info dt {
+	font-size:24px;
+	margin-bottom:16px;
+}
+
+#info dd ul, #faq dd ul {
+	margin-bottom:0;
+	list-style: none;
+}
+
+@media screen and (max-width:767px){
+	
+	#info dt {
+		font-size:20px;
+		line-height:1.2;
+	}
+
+}
+
+
+/*------------------
+  law
+------------------*/
+
+#law .law_box {
+	margin-bottom:64px;
+}
+
+#law .law_box h3 {
+	font-size:24px;
+	line-height: 1.8;
+	margin-bottom: 16px;
+}
+
+#law .law_box dl {
+	overflow:hidden;
+	clear:both;
+	padding:16px 0;
+	border-bottom:solid 1px #424242;
+	margin-bottom:0;
+}
+
+
+@media screen and (min-width:768px){
+
+#law .law_box dt {
+	width:30%;
+	float:left;
+}
+
+#law .law_box dd {
+	width:70%;
+	float:right;
+	margin-bottom:0;
+}
+
+}
+
+
+@media screen and (max-width:767px){
+
+#law .law_box h3 {
+	font-size:20px;
+	line-height:1.2;
+}
+
+#law .law_box dt {
+	margin-bottom:16px;
+	font-size:16px;
+}
+
+
+}
+
+
+
+/*------------------
+  FAQ
+------------------*/
+
+/***** tab_menu *****/
+
+#faq .tab_menu {
+	margin-bottom: 64px;
+	border-bottom: solid 1px #616161;
+	height: 36px;
+	overflow-y: hidden;
+}
+
+#faq .tab_scroll {
+	overflow-x: scroll;
+}
+
+#faq .tab_menu ul {
+	display: table;
+	padding-bottom: 24px;
+}
+
+#faq .tab_menu li {
+	display: table-cell;
+}
+
+#faq .tab_menu li label{
+	cursor: pointer;
+	margin-bottom: 0;
+	padding: 0 16px 8px;
+	position: relative;
+	white-space: nowrap;
+}
+
+#faq .tab_menu li input:checked+label {
+	color: #008ef8;
+	border-bottom: solid 2px #008ef8;
+}
+
+
+
+/***** FAQ *****/
+
+#faq .faq_box {
+	margin-bottom:64px;
+}
+
+#faq .faq_box h3 {
+	font-size:24px;
+	margin-bottom:16px;
+	line-height:1.8;
+}
+
+#faq .faq_box h3 i {
+	margin-right:0.5em;
+}
+
+#faq .faq_box dl {
+	margin-bottom:8px;
+}
+
+#faq .faq_box dt {
+	padding:16px 32px 16px 16px;
+	position:relative;
+	cursor:pointer;
+	border:solid 1px #424242;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#faq .faq_box dt:after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-top: 4px solid #616161;
+	border-right: 4px solid #616161;
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	margin-top: -5px;
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: ease-out;
+	transition-delay: .1s;
+}
+
+#faq .faq_box dt.select:after {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+#faq .faq_box dd {
+	padding:16px;
+	display:none;
+	border:solid 1px #424242;
+}
+
+
+
+@media screen and (max-width:767px){
+
+	#faq .faq_box h3 {
+		font-size:20px;
+		line-height:1.2;
+	}
+
+}
+
+
+
+
+
+
+
+/***** agreement *****/
+
+#agreement {
+	overflow:hidden;
+	clear:both;
+}
+
+#agreement dl {
+	margin-bottom:15px;
+	padding:20px 0px;
+}
+
+#agreement dl.lune,
+#agreement dl.free {
+	background:#333;
+}
+
+
+#agreement dt {
+	margin:0px 30px;
+	font-size:20px;
+	font-weight:bold;
+	position:relative;
+	cursor:pointer;
+}
+
+#agreement dt:after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-top: 4px solid #707070;
+	border-right: 4px solid #707070;
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	margin-top: -10px;
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: ease-out;
+	transition-delay: .1s;
+
+}
+
+#agreement dt.select:after {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	top: 60%;
+}
+
+#agreement dd {
+	border-top:solid 1px #707070;
+	margin:1.5em 30px 0px;
+	padding-top:1.5em;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 990px) {
+
+/***** agreement *****/
+
+#agreement {
+	overflow:hidden;
+	clear:both;
+}
+
+#agreement dl {
+	margin-bottom:15px;
+	padding:10px 0px;
+}
+
+#agreement dl.lune,
+#agreement dl.free {
+	background:#333;
+}
+
+#agreement dt {
+	margin:0px 10px;
+	padding-right:20px;
+	font-size:110%;
+	font-weight:bold;
+	position:relative;
+	cursor:pointer;
+}
+
+#agreement dt:after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-top: 4px solid #707070;
+	border-right: 4px solid #707070;
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	margin-top: -5px;
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: ease-out;
+	transition-delay: .1s;
+
+}
+
+#agreement dt.select:after {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	top: 60%;
+}
+
+#agreement dd {
+	border-top:solid 1px #707070;
+	margin:1.5em 10px 0px;
+	padding-top:1.5em;
+}
+}
