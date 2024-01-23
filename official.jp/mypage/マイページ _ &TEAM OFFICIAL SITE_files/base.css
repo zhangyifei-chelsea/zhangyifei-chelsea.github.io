@@ -1,0 +1,521 @@
+body {
+  min-height: 100vh;
+}
+
+header.navbar .navbar-brand {
+  margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+header.navbar {
+  padding-right: 0;
+  padding-left: 0;
+}
+header.navbar .navbar-brand img {
+  width: 154px;
+}
+}
+
+.navbar-toggler:focus {
+  outline: 0;
+}
+.navbar-toggler-custom-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+.navbar-toggler-custom-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+.navbar-toggler-custom-icon span:nth-child(1) {
+  top: 0;
+}
+.navbar-toggler-custom-icon span:nth-child(2) {
+  top: 10px;
+}
+.navbar-toggler-custom-icon span:nth-child(3) {
+  top: 20px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-custom-icon span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-custom-icon span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-custom-icon span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+header .nav-link {
+  border-bottom: 1px solid transparent;
+  -ms-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+@media screen and (max-width: 991px) {
+    header .nav-link:hover {
+      opacity: .6;
+    }
+}
+@media screen and (min-width: 992px) {
+    header .nav-link {
+      padding: 0 .5rem;
+    }
+    header .nav-link:hover {
+      border-bottom: 1px solid;
+    }
+}
+
+.top-key-visual img {
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 100vh;
+  object-fit: cover;
+  margin: 70px auto 0;
+}
+
+.container {
+  max-width: 960px;
+}
+
+h2>a:hover {
+  color: #343a40;
+  text-decoration: none;
+}
+
+.font-size-400 {
+  font-size: 400%;
+}
+
+.font-size-200 {
+  font-size: 200%;
+}
+
+.font-size-150 {
+  font-size: 150%;
+}
+
+.alert-body a, .alert-body a:visited, .alert-body a:hover {
+    color: #721c24;
+    text-decoration: underline;
+}
+
+.btn-main {
+  color: #343a40;
+  background-color: transparent;
+  background-image: none;
+  border-color: #343a40;
+}
+
+.btn-venue-application-warning {
+  border: solid 2px #ffc107 !important;
+  background: #fff !important;
+  color: #ffc107 !important;
+}
+.btn-venue-application-warning:hover {
+  background: #ffc107 !important;
+  color: #fff !important;
+}
+
+.btn-main:hover {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.btn {
+  border-radius: 2rem;
+}
+
+.btn:disabled {
+  color: #343a40 !important;
+  background-color: transparent !important;
+  cursor: not-allowed;
+}
+
+.btn-block {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .weverse-container h3 {
+    font-size: 23px;
+  }
+}
+
+.weverse-container .weverse-connection-button {
+  appearance: none;
+  background: none rgb(11, 230, 193);
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgb(11, 230, 193);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 700;
+  height: 52px;
+  line-height: 50px;
+  padding: 0px 12px;
+  text-align: center;
+  transition: all 0.5s ease-out 0s;
+}
+
+.weverse-container .weverse-disconnection-button {
+  appearance: none;
+  outline: none;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 700;
+  height: 52px;
+  line-height: 50px;
+  padding: 0px 12px;
+  text-align: center;
+  transition: all 0.5s ease-out 0s;
+}
+
+.weverse-container .weverse-connection-button:hover {
+  background-color: rgb(7, 198, 166);
+  border-color: rgb(7, 198, 166);
+}
+
+.weverse-container .weverse-connection-button.invalid {
+  color: #888 !important;
+  background-color: transparent !important;
+  cursor: not-allowed;
+  border-color: #aaa;
+}
+
+ul.pagination {
+  justify-content: center;
+}
+
+.cart-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 3.25rem;
+}
+.cart-count-badge {
+  position: absolute;
+  top: -15px;
+  right: 0px;
+  font-size: 100%;
+  padding: 10px 14px;
+  border-radius: 20px;
+}
+.cart-stock-notice {
+  font-size: 90%;
+}
+
+.carousel-indicators {
+  width: calc(100% + 10px);
+  justify-content: start;
+  margin-left: -5px;;
+}
+.carousel-indicators>li {
+  width: auto;
+  height: auto;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 5px;
+}
+
+.product-price {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.product-thumbnail>.overlay-bg-sold-out {
+  background: rgba(0,0,0,.5);
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+.product-thumbnail>.overlay-msg-sold-out {
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.product-thumbnail>.no-image {
+    height: 190px;
+    line-height: 180px;
+}
+.category-banner-thumbnail .no-image {
+    height: 80px;
+    line-height: 70px;
+}
+
+.cart-price,
+.checkout-price {
+  font-size: 1.5rem;
+}
+
+.checkout-request-message {
+  font-size: 1.0rem;
+}
+.checkout-request-message strong {
+  font-size: 0.8rem;
+}
+
+.product-image,
+.product-image {
+  width: 150px;
+}
+
+.cart-row td:nth-child(n+1),
+.cart-row td:nth-child(n+1) {
+  vertical-align: middle;
+}
+
+.ec-special-gift ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.user-registration-form select,
+.plan-change-user-profile-form select {
+  width: auto;
+}
+
+#create_profiles_gender.is-invalid>.radio>label,
+#edit_profiles_gender.is-invalid>.radio>label {
+  color: #dc3545;
+}
+[id$="_inForeignCountry"].is-invalid>.radio>label {
+  color: #dc3545;
+}
+.user-registration-form #create_profiles_birthday.is-invalid>select,
+.user-registration-form #for_admission_profiles_birthday.is-invalid>select,
+.plan-change-user-profile-form #create_profiles_birthday.is-invalid>select {
+  border-color: #dc3545;
+}
+[id^="edit_profiles_"].is-invalid~.invalid-feedback,
+.user-registration-form [id^="create_profiles_"].is-invalid~.invalid-feedback,
+.user-registration-form [id^="for_admission_create_profiles_"].is-invalid~.invalid-feedback
+.plan-change-user-profile-form [id^="create_profiles_"].is-invalid~.invalid-feedback {
+  display: block;
+}
+
+.post-item a:hover {
+  text-decoration: none;
+}
+
+.post-item .post-img {
+  object-fit: cover;
+  object-position: top;
+  max-width: 210px;
+  max-height: 210px;
+  min-width: 210px;
+  min-height: 210px;
+}
+
+.face-photo-upload-area {
+  display: inline-block;
+  width: 350px;
+  border: 2px dashed #aaa;
+  margin: 0 auto;
+  vertical-align: middle;
+  padding: 200px 0;
+  cursor: pointer;
+  color: #666;
+}
+
+.show-face-photo {
+  max-width: 360px;
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.side-by-side-images img {
+  margin: 10px;
+  width: 230px;
+  height: 230px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+.post-item .post-img {
+  max-width: 100%;
+  min-width: 100%;
+}
+}
+
+label i.fa-asterisk {
+  font-size: .5rem;
+}
+
+.shadow-image {
+  box-shadow: 0 3px 6px #aaa;
+}
+
+.membership-card-image {
+  max-width: 480px;
+}
+
+.membership-card-image-on-member-number {
+  right: 20px;
+  bottom: 12px;
+  color: #fff;
+  font-size: 1.6em;
+}
+
+.upload-photo-ok-image,
+.uploaded-photo-confirm-image {
+  max-width: 360px;
+}
+
+.upload-photo-ok-detail-list,
+.upload-photo-ng-detail-list {
+  line-height: 2;
+}
+
+.uploaded-photo-block {
+  max-width: 360px;
+}
+
+.uploaded-photo-status {
+  top: 16px;
+  left: 12px;
+}
+
+.uploaded-photo-status-label,
+.shipping-history-status-label,
+.ec-history-status-label,
+.ticket-history-status-label,
+.ticket-history-ticket-status-label,
+.es-contract-artist-status-label {
+  border-radius: 16px;
+  padding: 6px 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .mypagetop-attension-should-upload-photo,
+  .mypagetop-attension-should-continue-plan,
+  .mypagetop-attension-should-resubscribe-es,
+  .mypagetop-attension-will-need-to-reregister-plan-payment-method {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+  }
+}
+
+.mypagetop-attension-link:hover {
+  text-decoration: none;
+}
+
+.mypagetop-attension-link-icon {
+  position: absolute;
+  top:0;
+  right: 0;
+  padding: .75rem 1.25rem;
+}
+
+.mypagetop-attension-link-icon i {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.es-select-number-caution .alert-body a {
+    display: block;
+    margin-top: 15px;
+}
+
+.kuji-top-info {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 0.25rem;
+}
+.kuji-result-main > p {
+  font-size: 300%;
+  font-weight: 600;
+}
+.kuji-result-lotted-time > p, .kuji-result-received-time > p {
+  font-size: 220%;
+}
+.btn.kuji-result-receiving-button {
+  color: #fff;
+  background-color: rgb(255, 162, 48);
+  border-color: rgb(255, 162, 48);
+}
+.btn.kuji-result-receiving-button:hover {
+  color: rgb(255, 162, 48);
+  background-color: #fff;
+  border-color: rgb(255, 162, 48);
+}
+.kuji-result-received-modal-content {
+  background-color: rgb(255, 225, 122);
+  border: 5px solid rgba(224, 20, 0, 0.8);
+  border-radius: 0px;
+}
+.kuji-result-received-notification {
+  font-size: 150%;
+  font-weight: 600;
+  padding-top: 40px;
+  color: #370000;
+}
+.kuji-result-received-attention, .kuji-result-receiving-attention {
+  color: #dc3545;
+}
+.kuji-result-received-attention {
+  font-size: 80%;
+  font-weight: bold;
+}
+
+.venue-application-reservation-status-container table {
+  max-width: 400px;
+}
+
+/* MEMO:Breakpoints */
+@media screen and (min-width: 1200px) {
+}
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 991px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 575px) {
+}

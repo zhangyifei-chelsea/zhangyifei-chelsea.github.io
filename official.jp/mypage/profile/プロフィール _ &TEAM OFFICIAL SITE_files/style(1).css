@@ -1,0 +1,1229 @@
+/* ========================================== */
+/* base */
+/* ========================================== */
+
+.user-registration-form select {
+  max-width: 100%;
+}
+
+.pc-none{
+display:block;
+}
+.sp-none{
+display:none;
+}
+@media screen and (max-width: 767px) {
+.pc-none{
+display:none;
+}
+.sp-none{
+display:block;
+}
+}
+
+
+body {
+	font-family:"メイリオ",Meiryo,"HiraKakuProN-W3","ヒラギノ角ゴ ProN W3",sans-serif;
+	line-height:1.8;
+	color:#eceff1;
+	font-size:14px;
+}
+
+.container {
+    max-width: 1030px;
+}
+
+
+
+ul {
+	padding:0px;
+	margin:0;
+	list-style:none;
+}
+
+ul.indent li {
+	text-indent:-1em;
+	padding-left:1em;
+}
+
+dt {
+	font-weight:normal;
+}
+
+a {
+	text-decoration:none;
+	word-wrap:break-word;
+	word-break: break-all;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+
+a:hover {
+	text-decoration:none;
+}
+ 
+a:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type="text"],input[type="password"],input[type="email"],textarea,select{ 
+	font-family: inherit;
+	font-size:1em !important;
+	font-weight:inherit;
+    -webkit-appearance: none;
+}
+
+.container {
+    max-width: 1030px;
+}
+
+dl,dd,p {
+	margin:0;
+	padding:0;
+}
+hr  {
+border-color:#555;
+}
+
+/* copy-guard */
+img {
+	pointer-events: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-touch-callout: none;
+	-moz-user-select: none;
+	touch-callout: none;
+	user-select: none;
+}
+
+/* ========================================== */
+/* フォント */
+/* ========================================== */
+
+.font-base {
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.15em;
+/*    font-weight: 300;*/
+}
+
+.font-accent {
+  font-family: 'Poppins', sans-serif;
+font-weight:600;
+}
+
+.font-xs {
+  font-size: 11px;
+  line-height: 1.4rem;
+}
+
+a {
+	-webkit-transition:.3s ease;
+	transition:.3s ease;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+
+/* ========================================== */
+/* ヘッダー */
+/* ========================================== */
+
+header .brand-logo img {
+	width: 165px;
+}
+@media screen and (max-width: 767px) {
+header .brand-logo img {
+width: 100px !important;
+    padding: 5px 0px 0px 0px;
+}
+
+}
+
+header a {
+	color: #fff;
+	text-decoration:none;
+}
+
+header a:hover {
+	color: #fff;
+}
+/*
+header .btn {
+	min-width:100px;
+}*/
+
+header .nav-link {
+	border-bottom:none;
+}
+
+header .nav-link:hover {
+	border-bottom:none;
+opacity: 0.4;
+transition: .3s ease;
+}
+
+
+.navbar-nav.text-left.text-base.font-accent>a{
+	font-size: 20px;
+}
+
+.nav-item.nav-link>a{
+	font-size: 20px;
+}
+.nav-item.nav-link span>a{
+	font-size: 20px;
+}
+
+
+@media screen and (max-width: 1549px) {
+	
+header .btn {
+	min-width:80px;
+	font-size:90%;
+}
+
+header.navbar {
+	padding:0;
+
+}
+
+.navbar-toggler-custom-icon {
+	height:25px;
+}
+
+.collapse.show{
+	height:100vh;
+}
+
+}
+
+.navbar{
+padding:0px;
+}
+
+
+/**** hamburger ****/
+
+header .hamburger {
+	position:absolute;
+  display: block;
+  width: 32px;
+  height: 23px;
+  top:50%;
+  left:50%;
+  margin-top:-20px;
+  margin-left:-16px;
+  z-index: 99999;
+  transition: all .4s;
+  box-sizing: border-box;
+  cursor:pointer;
+}
+header .hamburger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+header .hamburger span:nth-of-type(1) {
+  top: 0;
+}
+header .hamburger span:nth-of-type(2) {
+  top: 10px;
+}
+header .hamburger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+header .hamburger span:nth-of-type(1) {
+  -webkit-animation: menu-ber01 .75s forwards;
+  animation: menu-ber01 .75s forwards;
+
+}
+header .hamburger span:nth-of-type(2) {
+  transition: all .25s .25s;
+  opacity: 1;
+}
+header .hamburger span:nth-of-type(3) {
+  -webkit-animation: menu-ber02 .75s forwards;
+  animation: menu-ber02 .75s forwards;
+}
+
+header .active span:nth-of-type(1) {
+  -webkit-animation: active-menu-ber01 .75s forwards;
+  animation: active-menu-ber01 .75s forwards;
+  background-color: #fff;
+ 
+}
+header .active span:nth-of-type(2) {
+  opacity: 0;
+}
+header .active span:nth-of-type(3) {
+  -webkit-animation: active-menu-ber03 .75s forwards;
+  animation: active-menu-ber03 .75s forwards;
+  background-color: #fff;
+}
+
+@-webkit-keyframes menu-ber01 {
+  0% {
+    -webkit-transform: translateY(9px) rotate(45deg);
+  }
+  50% {
+    -webkit-transform: translateY(9px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+  }
+}
+
+
+@keyframes menu-ber01 {
+  0% {
+    transform: translateY(9px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(9px) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+
+@-webkit-keyframes menu-ber02 {
+  0% {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: translateY(-9px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+  }
+}
+
+
+@keyframes menu-ber02 {
+  0% {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+
+@-webkit-keyframes active-menu-ber01 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0);
+  }
+  50% {
+    -webkit-transform: translateY(11px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateY(11px) rotate(45deg);
+  }
+}
+
+
+@keyframes active-menu-ber01 {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(11px) rotate(0);
+  }
+  100% {
+    transform: translateY(11px) rotate(45deg);
+  }
+}
+
+
+@-webkit-keyframes active-menu-ber03 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+  }
+}
+
+
+@keyframes active-menu-ber03 {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0);
+  }
+  100% {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
+
+
+.jpn_contents { display: block; }
+.kor_contents { display: none; }
+.chn_contents { display: none; }
+.eng_contents { display: none; }
+
+
+
+select.js-multi-language{cursor:pointer; padding:0px 10px; outline: none; background: none;border: none;border-bottom: 1px solid #fff;color: #fff;width: 100%;}
+select.js-multi-language option{cursor:pointer; display: block;padding: 10px;background: #333;color: #fff;border: none;}
+
+.langmenu{
+min-width:150px;
+	position:relative;
+	cursor:pointer;
+}
+
+.langmenu:after{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #BDBDBD;
+	border-right: 2px solid #BDBDBD;
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	margin-top: -8px;
+}
+@media screen and (max-width: 1549px) {
+.langmenu{
+min-width:80px;
+position: absolute;
+    cursor: pointer;
+    right: 80px;
+}
+
+}
+
+
+@media screen and (min-width: 1550px) {	
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+    }
+
+.d-custom-inline {
+display:inline!important;
+}
+
+.d-custom-none {
+display:none!important;
+}
+
+}
+
+
+/* ========================================== */
+/* CONTENTS */
+/* ========================================== */
+
+.container h2 {
+	margin:50px auto;
+}
+
+
+@media screen and (max-width: 767px) {
+
+.container h2 {
+	font-size:26px;
+}
+
+}
+
+
+/* ========================================== */
+/* フッター */
+/* ========================================== */
+
+footer {
+  padding:32px 0;
+  border-top:solid 1px #424242;
+background:#000;
+}
+
+footer ul {
+  list-style: none;
+  padding:0px;
+  margin-bottom:32px;
+}
+
+footer li {
+  display:inline-block;
+  margin-right:32px;
+}
+
+footer li a {
+  color:#ECEFF1;
+}
+
+footer li a:hover {
+  color:#ECEFF1;
+  opacity:0.7;
+}
+
+
+@media screen and (max-width: 990px) {
+
+footer li {
+  display:inline-block;
+  margin-right:18px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+footer li {
+  display:block;
+  margin:0 0 16px;
+}
+
+}
+
+
+
+/* ========================================== */
+/* 共通カラー */
+/* ========================================== */
+/* ベースカラー */
+/* 背景 */
+.bg-base {
+  /* サイト全体の背景色 */
+  background-color: #fff;
+}
+.bg-toggle {
+  /* サイト全体の背景色 */
+  background-color: #fff;
+}
+
+/* メインカラー */
+/* 背景 */
+.bg-main {
+  /* 主にヘッダの背景色 */
+  background-color: #000;
+}
+/* サブカラー */
+.bg-sub {
+  /* 主にフッタの背景色 */
+  background-color: #000;
+}
+/* アクセントカラー */
+/* 任意でUIパーツの色を増やしたいときに定義を増やす */
+.bg-accent-light-gray {
+  background-color: #f8f8f8;
+}
+.bg-accent-light-red {
+  background-color: #efdfdf;
+}
+
+/* テキスト */
+.text-base {
+  color: #eceff1;
+}
+.text-main {
+  color: #eceff1;
+}
+.text-accent-light-gray {
+  color: #c0c0c0;
+}
+.red {color:#FF0004;}
+
+/* ========================================== */
+/* UIパーツ別 */
+/* ========================================== */
+/* ボタン */
+.btn {
+  border-radius: 2rem;
+}
+.btn-main {
+  color: #222;
+  background-color: #fff;
+  border-color: #fff;
+}
+@media screen and (min-width: 768px) {
+.btn-main {
+  color: #eee;
+  background-color: transparent;
+  background-image: none;
+  border-color: #eee;
+}
+}
+.btn-main:hover {
+  color: #222;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* アラート */
+.alert-main {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+.alert-registration-mail.alert,
+.alert-mypage-change-email.alert {
+  border: none;
+}
+.alert-registration-mail.alert .alert-heading,
+.alert-mypage-change-email.alert .alert-heading {
+  color: #ff0000;
+}
+.alert-registration-mail.alert .alert-body,
+.alert-mypage-change-email.alert .alert-body {
+  color: #454545;
+}
+
+.alert-danger {
+    background-color: #f8cfd3;
+}
+.alert-success {
+background-color: #b7ddc0;
+}
+
+/* バッジ（ラベル） */
+.badge-history-status.badge {
+  font-size: 100%;
+  font-weight: normal;
+  padding: .5em 1em;
+}
+.badge-history-status.badge-secondary {
+  color: #fff;
+  background-color: #555;
+}
+
+/* ========================================== */
+/* 画面別 */
+/* ========================================== */
+
+
+/* マイページ履歴 */
+@media screen and (min-width: 768px) {
+.row-history-left {
+  border-right: 1px solid rgba(0,0,0,.1);
+}
+}
+
+
+
+/*--------------------
+  MYPAGE
+--------------------*/
+@media screen and (min-width: 768px) {
+.row-history-left {
+  border-right: 1px solid rgba(0,0,0,.1);
+}
+}
+
+.mypage-plan-contract-footer {
+    display: none;
+}
+
+.uploaded-photo-status-label, .shipping-history-status-label, .ec-history-status-label, .ticket-history-status-label, .ticket-history-ticket-status-label {
+    border-radius: 2rem;
+	padding: 6px 1em;
+}
+
+/*membership-card*/
+
+.membership-card-image .membership-card-image-on-member-number {
+right: 3%;
+bottom: 3%;
+color:#fff;
+font-size: 16px;
+}
+
+@media screen and (max-width: 575px) {
+.membership-card-image .membership-card-image-on-member-number {
+font-size: 4vw;
+}
+}
+
+/*mipage card*/
+.card{
+	background-color: #333;
+}
+.list-group-item{
+	background-color: #333;
+	color: #fff;
+	border-color: rgba(255,255,255,.125);
+}
+.list-group-item-action:focus,
+.list-group-item-action:hover{
+	color:#fff;
+	text-decoration:none;
+	background-color: #2d2d2d;
+}
+.membership-card-info-content hr,
+.card-body hr,
+.card-footer{
+	border-color: rgba(255,255,255,.125);
+}
+
+/*------------------------
+ pagination上余白
+------------------------*/
+ul.pagination {
+	margin-top: 80px;
+}
+
+/*--------------------------------
+ form 内容確認ページ
+--------------------------------*/
+form dd{
+	margin-bottom:1rem;
+}
+form dt label{
+	font-weight: 700;
+}
+
+/*--------------------
+  STORE TAG
+--------------------*/
+#store .store_tag ul{
+  text-align: left!important;
+  display: inline;
+}
+
+#store .store_tag ul li{
+  padding: 0!important;
+  margin-left: 1em;
+}
+
+
+
+
+
+
+/**** lune MENU ****/
+
+#lune #lune_nav {
+	float:right;
+	margin-left:15px;
+}
+
+#lune #lune_nav .lune_btn {
+	position:relative;
+	background:#000;
+	width:70px;
+	height:70px;
+	padding:10px;
+	box-sizing:border-box;
+	text-align:center;
+}
+
+#lune #lune_nav .lune_btn .menu {
+	font-family: 'Poppins', sans-serif;
+	font-weight:800;
+	position:absolute;
+	bottom:7px;
+	left: 10px;
+    width: 48px;
+	font-size:13px;
+color:#fff;
+}
+
+
+#lune #lune_nav .menuarea {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height: 100vh;
+	z-index:999;
+	display:none;
+	background: #000;
+}
+
+#lune #lune_nav .menuarea .menu_inner{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	-webkit- transform: translateY(-50%) translateX(-50%);
+	width:100%;
+}
+
+
+
+@media screen and (min-width: 1550px) {
+
+
+#lune #lune_nav .menuarea .lune_menu {
+	overflow:hidden;
+	clear:both;
+	width:600px;
+	margin:0px auto;
+}
+
+#lune #lune_nav .menuarea .lune_menu .logo {
+    width: 100%;
+    margin: 20px 0px 50px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+color:#fff;
+line-height: 1.2;
+}
+
+#lune #lune_nav .menuarea .lune_menu ul {
+	width:40%;
+}
+
+#lune #lune_nav .menuarea .lune_menu li {
+	font-size:30px;
+	letter-spacing:3px;
+	margin-bottom:20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+#lune #lune_nav .menuarea .lune_menu li a {
+	display:block;
+	color:#fff;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#lune #lune_nav .menuarea .lune_menu li a:hover {
+	opacity:0.8;
+}
+
+#lune #lune_nav .menuarea .btn_menu {
+	overflow:hidden;
+	clear:both;
+	text-align:center;
+	margin:30px auto;
+}
+
+#lune #lune_nav .menuarea .btn_menu li {
+	width:300px;
+	box-sizing:border-box;
+	display:inline-block;
+}
+
+#lune #lune_nav .menuarea .btn_menu li a {
+	display:block;
+	text-decoration:none;
+	font-size:16px;
+	text-align:center;
+	border:solid 2px #fff;
+	color:#fff;
+	padding:15px 0;
+	margin:0px 10px;
+	line-height:1;
+	background:#000;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#lune #lune_nav .menuarea .btn_menu li a:hover {
+	text-decoration:none;
+	background:#fff;
+	color:#000;
+}
+
+
+
+#official {
+display:none;
+}
+}
+
+
+
+
+@media screen and (max-width: 1549px) {
+
+#lune #lune_nav .lune_btn{
+background:none;
+}
+
+header .hamburger span{
+background:#fff;
+}
+#lune #lune_nav .lune_btn .menu{
+color:#fff;
+}
+
+header{
+height:70px;
+}
+
+#lune{
+position:absolute;
+right:0;
+top:0;
+}
+
+.brand-logo{
+display:none;
+}
+
+/**** OFFICIAL ****/
+
+#official {
+	overflow:hidden;
+	clear:both;
+width:80%;
+/*margin: 0 auto;*/
+}
+
+#official h1 {
+	width:110px;
+	margin: 10px auto 10px;
+	line-height:1;
+	text-align:center;
+}
+
+#official h1 img.logo_ofs {
+	width:90%;
+	margin:0px auto 10px;
+}
+
+#official .official_btn {
+	position: absolute;
+	left: 4%;
+	top: 5px;
+	width:35px;
+	height:100%;
+	text-align:center;
+	color:#fff;
+	z-index:99999;
+	font-size:110%;
+font-family: 'Poppins', sans-serif;
+}
+
+#official .official_btn .ofs_btn {
+	margin:0px auto;
+	line-height:0;
+padding-top:15px;
+padding-bottom:10px;
+}
+#official .official_btn .ofs_btn2 {
+width:20px;
+	margin:0px auto;
+	line-height:0;
+padding-top:15px;
+padding-bottom:10px;
+display:none;
+}
+#official .official_btn .ofs_btn2.active{
+display:block !important;
+}
+
+#official .official_btn .menu {
+	letter-spacing:2px;
+	line-height:1;
+font-size:60%;
+}
+
+#official .menuarea {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	z-index:99998;
+	height:100vh;
+	padding-top:60px;
+	background:#000;
+	display:none;
+}
+
+#official .menuarea ul.ofs_menu {
+	overflow:hidden;
+	clear:both;
+	margin:50px 3% 0px;
+	font-size:120%;
+}
+
+#official .menuarea ul.ofs_menu li {
+	width:100%;
+	float:left;
+	font-size:120%;
+	letter-spacing:2px;
+	font-family: 'Poppins', sans-serif;
+}
+
+#official .menuarea ul.ofs_menu li a {
+	display:block;
+	padding:5px 0px;
+	text-decoration:none;
+	color:#FFF;
+font-weight:700;
+}
+
+
+#official .menuarea .btn_menu {
+	overflow:hidden;
+	clear:both;
+	margin:30px 3% 0px;
+}
+
+#official .menuarea .btn_menu ul {
+	margin:0px auto;
+}
+
+#official .menuarea .btn_menu li {
+	width:48%;
+	margin:0px 1% 2% 1%;
+	box-sizing:border-box;
+	float:left;
+}
+
+#official .menuarea .btn_menu li a {
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	border:solid 2px #fff;
+	color:#fff;
+	padding:15px 0;
+	line-height:1;
+	background:#000;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#official .menuarea .btn_menu li a:hover {
+	text-decoration:none;
+	background:#fff;
+	color:#000;
+}
+
+
+
+
+
+
+#lune #lune_nav .menuarea .lune_menu {
+	overflow:hidden;
+	clear:both;
+	margin:15px 3% 30px;
+	font-size:120%;
+}
+
+#lune #lune_nav .menuarea .lune_menu .logo {
+	width:90%;
+	max-width:650px;
+	margin:0px auto 30px;
+font-family: 'Poppins', sans-serif;
+font-size:1.2rem;
+text-align:center;
+color:#fff;
+}
+
+#lune #lune_nav .menuarea .lune_menu ul {
+	overflow:hidden;
+	clear:both;
+}
+
+#lune #lune_nav .menuarea .lune_menu li {
+	width:100%;
+	float:left;
+	font-size:120%;
+	letter-spacing:2px;
+	margin-bottom:20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+#lune #lune_nav .menuarea .lune_menu li a {
+	display:block;
+	color:#fff;
+	padding:5px 0px;
+	text-decoration:none;
+}
+
+#lune #lune_nav .menuarea .btn_menu {
+	overflow:hidden;
+	clear:both;
+	margin:30px 3% 0px;
+}
+
+#lune #lune_nav .menuarea .btn_menu li {
+	width:48%;
+	margin:0px 1%;
+	box-sizing:border-box;
+	float:left;
+}
+
+#lune #lune_nav .menuarea .btn_menu li a {
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	border:solid 2px #fff;
+	color:#fff;
+	padding:15px 0;
+	line-height:1;
+	background:#000;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#lune #lune_nav .menuarea .btn_menu li a:hover {
+	text-decoration:none;
+	background:#fff;
+	color:#000;
+}
+}
+
+
+
+.login-connection-button{
+padding: 13px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #fff;
+color: #000;
+}
+.login-connection-button:hover{
+color: #333;
+}
+
+
+
+/**** menu追加 ****/
+@media screen and (min-width: 1550px) {
+#lune #lune_nav .menuarea .menu_inner {
+		max-width: 1200px;
+	}
+#lune #lune_nav .menuarea .lune_menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 1200px;
+	}
+#lune #lune_nav .menuarea .lune_menu .logo {
+    width: 50%;
+    margin-right: 90px;
+    margin-top: 75px;
+    }
+}
+
+
+/*--------------------------------
+ form 内容確認ページ処理
+--------------------------------*/
+form dt label,form dt{
+	font-weight: 700;
+}
+form dl.row, form dd{
+	margin-bottom:1rem;
+}
+
+.missing-profile .col-form-label{
+font-weight:bold;
+}
+
+h5.name-logo img{
+width:500px;
+text-align:center;
+}
+
+@media screen and (max-width: 560px) {
+h5.name-logo img{
+width:100%;
+text-align:center;
+}
+
+}
+
+/* マイページ プロフィール 不要項目非表示 */
+.mypage-profile-basic-info .basic-info-ad,
+.mypage-profile-basic-info .basic-info-FC2,
+.mypage-profile-basic-info .basic-info-FC3,
+.mypage-profile-basic-info .basic-info-FC5,
+.mypage-profile-basic-info .basic-info-FC6,
+.mypage-profile-basic-info .basic-info-question3,
+.mypage-profile-basic-info .basic-info-question4,
+.mypage-profile-basic-info .basic-info-question5,
+.mypage-profile-basic-info .basic-info-question6,
+.mypage-profile-basic-info .basic-info-question7,
+.mypage-profile-basic-info .basic-info-1,
+.mypage-profile-basic-info .basic-info-2,
+.mypage-profile-basic-info .basic-info-3,
+.mypage-profile-basic-info .basic-info-4,
+.mypage-profile-basic-info .basic-info-q2,
+.mypage-profile-basic-info .basic-info-q4,
+.mypage-profile-basic-info .basic-info-q7,
+.mypage-profile-basic-info .basic-info-q8,
+.mypage-profile-basic-info .basic-info-q9,
+.mypage-profile-basic-info .basic-info-ad + hr,
+.mypage-profile-basic-info .basic-info-FC2 + hr,
+.mypage-profile-basic-info .basic-info-FC3 + hr,
+.mypage-profile-basic-info .basic-info-FC5 + hr,
+.mypage-profile-basic-info .basic-info-FC6 + hr,
+.mypage-profile-basic-info .basic-info-question3 + hr,
+.mypage-profile-basic-info .basic-info-question4 + hr,
+.mypage-profile-basic-info .basic-info-question5 + hr,
+.mypage-profile-basic-info .basic-info-question6 + hr,
+.mypage-profile-basic-info .basic-info-question7 + hr,
+.mypage-profile-basic-info .basic-info-1 + hr,
+.mypage-profile-basic-info .basic-info-2 + hr,
+.mypage-profile-basic-info .basic-info-3 + hr,
+.mypage-profile-basic-info .basic-info-4 + hr,
+.mypage-profile-basic-info .basic-info-q2 + hr,
+.mypage-profile-basic-info .basic-info-q4 + hr,
+.mypage-profile-basic-info .basic-info-q7 + hr,
+.mypage-profile-basic-info .basic-info-q8 + hr,
+.mypage-profile-basic-info .basic-info-q9 + hr
+{
+  display: none !important;
+}
+
+
+/*--------------------------------
+ &call 追加CSS
+--------------------------------*/
+#andcall .post-item-type_c2 .post-eyecatch{
+	padding-top: 178%;
+}
+@media screen and (min-width: 768px) {
+#andcall-article.post-body-detail .movie {
+    width: 50%;
+}
+}
